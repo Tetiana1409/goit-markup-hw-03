@@ -18,7 +18,18 @@ body {
   background-color: var(--primary-white-color);
 }
 
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -92,6 +103,7 @@ body {
 }
 
 .hero-tittle {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -106,6 +118,7 @@ body {
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
+  min-width: 216px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -162,6 +175,7 @@ body {
 
 /* -------------------INDEX-ABOUT US--------------------- */
 .about-us-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -184,6 +198,7 @@ body {
 }
 
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -193,6 +208,7 @@ body {
 }
 
 .team-title-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -202,6 +218,7 @@ body {
 }
 
 .team-speciality {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
