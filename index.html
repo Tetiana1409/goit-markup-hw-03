@@ -15,14 +15,17 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body class="body">
     <header class="header">
-      <nav class="header-navigation">
-        <div class="container">
+      <div class="container">
+        <nav class="header-navigation">
           <a class="link header-link" href="./index.html">
             <span class="logo">Web</span>
             <span class="header-logo">Studio</span></a
@@ -38,10 +41,7 @@
               <a class="header-link link" href="#">Контакти</a>
             </li>
           </ul>
-        </div>
-      </nav>
-
-      <div class="container">
+        </nav>
         <ul class="header-list list">
           <li class="header-item">
             <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -54,14 +54,14 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-tittle">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button">Замовити послугу</button>
         </div>
       </section>
 
-      <section class="advances">
+      <section class="advances section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list advances-list">
@@ -93,7 +93,7 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us section">
         <div class="container">
           <h2 class="about-us-title">Чим ми займаємося</h2>
           <ul class="list about-us-list">
@@ -125,7 +125,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="list team-list">
@@ -136,8 +136,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title-name">Ігор Дем'яненко</h3>
-              <p class="team-speciality">Product Designer</p>
+              <div class="text">
+                <h3 class="team-title-name">Ігор Дем'яненко</h3>
+                <p class="team-speciality">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -146,18 +148,24 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title-name">Ольга Рєпіна</h3>
-              <p class="team-speciality">Frontend Developer</p>
+              <div class="text">
+                <h3 class="team-title-name">Ольга Рєпіна</h3>
+                <p class="team-speciality">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/img3.jpg" alt="Усміхнений хлопець" width="270" height="260" />
-              <h3 class="team-title-name">Микола Тарасов</h3>
-              <p class="team-speciality">Marketing</p>
+              <div class="text">
+                <h3 class="team-title-name">Микола Тарасов</h3>
+                <p class="team-speciality">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/img4.jpg" alt="Хлопець в окулярах" width="270" height="260" />
-              <h3 class="team-title-name">Михайло Єрмаков</h3>
-              <p class="team-speciality">UI Designer</p>
+              <div class="text">
+                <h3 class="team-title-name">Михайло Єрмаков</h3>
+                <p class="team-speciality">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

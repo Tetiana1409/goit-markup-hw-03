@@ -12,19 +12,38 @@
   --border-color: #eeeeee;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: 'roboto', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-}
-
-h1,
-h2,
-h3,
-ul,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .list {
@@ -45,7 +64,19 @@ p {
   outline: 2px solid tomato;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ----------------------INDEX-HEADER--------------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline: 4px solid aqua;
+}
+
 .logo {
   font-family: 'raleway';
   font-weight: 700;
@@ -99,7 +130,10 @@ p {
 
 /* -------------------------INDEX-HERO-------------------- */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: var(--bg-color);
+  outline: 4px solid aqua;
 }
 
 .hero-tittle {
@@ -113,8 +147,10 @@ p {
   color: var(--primary-white-color);
 }
 
-.hero-btn {
+.hero-button {
   font-family: inherit;
+  margin: 0 auto;
+  display: block;
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
@@ -129,21 +165,22 @@ p {
   color: var(--primary-white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  cursor: pointer;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--primary-white-color);
   background: var(--hero-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  cursor: pointer;
 }
 
 /* ---------------------INDEX-ADVANCES--------------------- */
+.advances {
+  outline: 4px solid aqua;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -158,6 +195,7 @@ p {
 }
 
 .advances-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -173,7 +211,11 @@ p {
   color: var(--primary-text-color);
 }
 
-/* -------------------INDEX-ABOUT US--------------------- */
+/* -------------------INDEX-ABOUT-US--------------------- */
+.about-us {
+  outline: 4px solid aqua;
+}
+
 .about-us-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -188,6 +230,7 @@ p {
 
 .team {
   background: var(--team-bg-color);
+  outline: 4px solid aqua;
 }
 
 .team-item {
@@ -207,6 +250,11 @@ p {
   color: var(--primary-tittle-color);
 }
 
+.text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title-name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -218,7 +266,6 @@ p {
 }
 
 .team-speciality {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -228,7 +275,14 @@ p {
 /* ---------------------INDEX-FOOTER-----------------------*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--bg-color);
+  outline: 4px solid aqua;
+}
+
+.footer-list {
+  margin-top: 20px;
 }
 
 .footer-logo {
@@ -239,12 +293,16 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .footer-link-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  font-style: normal;
 }
 
 .footer-link-mail,
@@ -253,7 +311,6 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
-  font-style: normal;
 }
 
 .footer-link-address:hover,
@@ -267,6 +324,10 @@ p {
 
 /* -------------------PORTFOLIO-BUTTON------------------ */
 
+.button {
+  outline: 4px solid aqua;
+}
+
 .button-primary {
   font-family: inherit;
   border-radius: 4px;
@@ -279,7 +340,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-tittle-color);
   background: var(--active-btn-bg-color);
-  cursor: pointer;
 }
 
 .button-primary:hover,
@@ -289,15 +349,35 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  cursor: pointer;
   border: 0;
+}
+
+.button-list {
+  margin-bottom: 34px;
+}
+
+.main-list-tittle {
+  margin-bottom: 4px;
+}
+
+.main-list-text {
+  margin-bottom: 20px;
 }
 
 /* ----------------------PORTFOLIO-MAIN-------------------- */
 
+.main {
+  outline: 4px solid aqua;
+}
+
 .main-list-item {
   background: var(--primary-white-color);
   border: 1px solid var(--border-color);
+}
+
+.pf-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .main-list-tittle {
