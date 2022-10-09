@@ -243,6 +243,11 @@ img {
   display: flex;
   gap: 30px;
 }
+
+.advances-item {
+  width: 270px;
+}
+
 .advances-after-title {
   font-size: 14px;
   line-height: 1.71;
