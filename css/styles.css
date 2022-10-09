@@ -63,7 +63,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 .section {
@@ -74,7 +73,11 @@ img {
 /* ----------------------INDEX-HEADER--------------------- */
 
 .header {
-  outline: 4px solid aqua;
+  border: 1px solid #ececec;
+}
+
+.header-link-logo {
+  margin-right: 93px;
 }
 
 .logo {
@@ -99,17 +102,23 @@ img {
   color: var(--accent-color);
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-list {
   display: flex;
+  gap: 50px;
 }
 
-.header-item,
-.header-link-logo {
-  outline: 1px solid red;
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 50px;
+.header-wrap {
+  margin-left: 344px;
 }
 
 .header-link-logo {
@@ -159,13 +168,12 @@ img {
 
 /* -------------------------INDEX-HERO-------------------- */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background: var(--bg-color);
-  outline: 4px solid aqua;
 }
 
 .hero-tittle {
+  max-width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -184,6 +192,7 @@ img {
   border: 0;
   padding: 10px 32px;
   min-width: 216px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -206,9 +215,6 @@ img {
 }
 
 /* ---------------------INDEX-ADVANCES--------------------- */
-.advances {
-  outline: 4px solid aqua;
-}
 
 .visually-hidden {
   position: absolute;
@@ -233,6 +239,10 @@ img {
   color: var(--primary-tittle-color);
 }
 
+.advances-list {
+  display: flex;
+  gap: 30px;
+}
 .advances-after-title {
   font-size: 14px;
   line-height: 1.71;
@@ -241,9 +251,6 @@ img {
 }
 
 /* -------------------INDEX-ABOUT-US--------------------- */
-.about-us {
-  outline: 4px solid aqua;
-}
 
 .about-us-title {
   margin-bottom: 50px;
@@ -255,18 +262,18 @@ img {
   color: var(--primary-tittle-color);
 }
 
+.about-us-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-us-item {
+  width: calc((100% - 60px) / 3);
+}
 /* -------------------------INDEX-TEAM------------------ */
 
 .team {
   background: var(--team-bg-color);
-  outline: 4px solid aqua;
-}
-
-.team-item {
-  background: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -277,6 +284,19 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-tittle-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-item {
+  width: calc((100% - 90px) / 4);
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .text {
@@ -307,7 +327,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--bg-color);
-  outline: 4px solid aqua;
 }
 
 .footer-link-logo {
@@ -353,8 +372,10 @@ img {
 
 /* -------------------PORTFOLIO-BUTTON------------------ */
 
-.button {
-  outline: 4px solid aqua;
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 .button-primary {
@@ -396,17 +417,20 @@ img {
 
 /* ----------------------PORTFOLIO-MAIN-------------------- */
 
-.main {
-  outline: 4px solid aqua;
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .main-list-item {
+  width: calc((100% - 60px) / 3);
   background: var(--primary-white-color);
-  border: 1px solid var(--border-color);
 }
 
 .pf-text {
   padding: 20px 24px;
+  border: 1px solid var(--border-color);
 }
 
 .main-list-tittle {
