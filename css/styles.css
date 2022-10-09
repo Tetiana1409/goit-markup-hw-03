@@ -329,13 +329,12 @@ img {
 /* ---------------------INDEX-FOOTER-----------------------*/
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background: var(--bg-color);
 }
 
-.footer-link-logo {
-  margin-bottom: 20px;
+.footer-wrap {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -347,8 +346,12 @@ img {
   color: var(--primary-white-color);
 }
 
+.footer-list {
+  margin-top: 20px;
+}
+
 .footer-item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .footer-link-address {
